@@ -1,0 +1,174 @@
+body{
+    background-color: #333;
+}
+header .container {
+    display: flex;
+    justify-content: space-between; /* Espacia el logo y el nav */
+    align-items: center; /* Alinea verticalmente el logo y los elementos del nav */
+    max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+    padding: 10px 0; /* Añade un pequeño padding */
+    background-color: #333;
+}
+
+.logo {
+    max-height: 80px; /* Limita la altura del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    width: auto; /* Evita deformaciones */
+}
+
+header a {
+    padding: 8px 16px; /* Aumenta el padding para hacer los enlaces más grandes */
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 18px; /* Ajusta el tamaño de la fuente según lo necesario */
+}
+
+header a:hover {
+    color: #A9A18A;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url(img/RELOJ.webp);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 60px; /* Aumentado para separar el hero de las cards */
+}
+
+#descripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px; /* Espacio superior e inferior */
+    background-color: #f7f7f7; /* Fondo claro para destacar la sección */
+}
+
+.descripcion-texto {
+    font-size: 24px; /* Tamaño del texto aumentado */
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio entre el texto y el botón */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+.catalogo-btn {
+    font-size: 1.5em; /* Tamaño del texto del botón */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.catalogo-btn:hover {
+    background-color: #333;
+    color: #A9A18A;
+}
+
+#features {
+    background-color: #333; /* Fondo oscuro */
+    padding: 60px 0; /* Espaciado superior e inferior */
+    color: white; /* Color del texto */
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre las columnas */
+    max-width: 1200px;
+    margin: 0 auto; /* Centramos la sección */
+}
+
+.feature-item {
+    width: 30%; /* Cada columna ocupa el 30% del ancho */
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-icon img {
+    max-width: 40px; /* Tamaño de los iconos */
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 16px; /* Tamaño del título */
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase; /* Mayúsculas */
+}
+
+.feature-item p {
+    font-size: 14px; /* Tamaño del texto de descripción */
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.learn-more-btn {
+    font-size: 14px;
+    color: #A9A18A;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #A9A18A;
+    transition: color 0.3s ease;
+}
+
+/* Sección de Monochrome Black Watch */
+#monochrome-watch {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+#monochrome-watch h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#monochrome-watch img {
+    max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene las proporciones */
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #monochrome-watch h1 {
+        font-size: 2em;
+    }
+    
+    #monochrome-watch p {
+        font-size: 1em;
+    }
+}
+
+footer {
+    background-color: #333; /* Color de fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 40px 0; /* Espaciado */
+    text-align: center;
+}
+
+.footer-socials a {
+    color: #A9A18A; /* Color de los íconos */
+    font-size: 24px;
+}
+
+
+@media (max-width: 768px) {
+    footer .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+}
